@@ -1,0 +1,201 @@
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "IBM Plex Sans Arabic", sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --font-heading: "IBM Plex Sans Arabic", sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-app-primary-dark: var(--color-primary-dark);
+  --color-app-accent: var(--color-accent);
+  --color-app-success: var(--color-success);
+  --color-app-bg-main: var(--color-bg-main);
+  --color-app-bg-card: var(--color-bg-card);
+  --color-app-surface-soft: var(--color-surface-soft);
+  --color-app-text-primary: var(--color-text-primary);
+  --color-app-text-secondary: var(--color-text-secondary);
+  --color-app-text-muted: var(--color-text-muted);
+  --color-app-text-soft: var(--color-text-soft);
+  --color-app-divider: var(--color-divider);
+  --color-app-status-success-bg: var(--color-status-success-bg);
+  --color-app-status-success-text: var(--color-status-success-text);
+  --color-app-status-warning-bg: var(--color-status-warning-bg);
+  --color-app-status-warning-text: var(--color-status-warning-text);
+  --color-app-status-error-bg: var(--color-status-error-bg);
+  --color-app-status-error-text: var(--color-status-error-text);
+  --color-app-status-info-bg: var(--color-status-info-bg);
+  --color-app-status-info-text: var(--color-status-info-text);
+  --radius-sm: var(--radius-sm-token);
+  --radius-md: var(--radius-md-token);
+  --radius-lg: var(--radius-lg-token);
+  --radius-xl: var(--radius-xl-token);
+  --radius-2xl: calc(var(--radius-xl-token) + 4px);
+}
+
+:root {
+  --color-primary-dark: #16162a;
+  --color-accent: #e8650a;
+  --color-success: #1e4d35;
+  --color-bg-main: #ede8e1;
+  --color-bg-card: #ffffff;
+  --color-surface-soft: #f5f0ea;
+  --color-text-primary: #16162a;
+  --color-text-secondary: #5a5060;
+  --color-text-muted: #a09080;
+  --color-text-soft: #c0b0a0;
+  --color-border: #ddd6ce;
+  --color-divider: #f0ece6;
+  --color-status-success-bg: #edfaf4;
+  --color-status-success-text: #1a6640;
+  --color-status-warning-bg: #fff8e6;
+  --color-status-warning-text: #8a6000;
+  --color-status-error-bg: #fff0ee;
+  --color-status-error-text: #8a2010;
+  --color-status-info-bg: #eef5ff;
+  --color-status-info-text: #1a4a8a;
+  --radius-sm-token: 6px;
+  --radius-md-token: 10px;
+  --radius-lg-token: 16px;
+  --radius-xl-token: 20px;
+  --background: var(--color-bg-main);
+  --foreground: var(--color-text-primary);
+  --card: var(--color-bg-card);
+  --card-foreground: var(--color-text-primary);
+  --popover: var(--color-bg-card);
+  --popover-foreground: var(--color-text-primary);
+  --primary: var(--color-primary-dark);
+  --primary-foreground: #ffffff;
+  --secondary: var(--color-surface-soft);
+  --secondary-foreground: var(--color-text-primary);
+  --muted: #f3ede7;
+  --muted-foreground: var(--color-text-muted);
+  --accent: var(--color-accent);
+  --accent-foreground: #ffffff;
+  --destructive: var(--color-status-error-text);
+  --border: var(--color-border);
+  --input: var(--color-border);
+  --ring: var(--color-accent);
+  --chart-1: var(--color-primary-dark);
+  --chart-2: var(--color-accent);
+  --chart-3: var(--color-success);
+  --chart-4: #7a4020;
+  --chart-5: var(--color-status-info-text);
+  --radius: var(--radius-lg-token);
+  --sidebar: var(--color-primary-dark);
+  --sidebar-foreground: #c8c8e0;
+  --sidebar-primary: var(--color-accent);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1e1e38;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #22223a;
+  --sidebar-ring: var(--color-accent);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-background text-foreground antialiased;
+    direction: rtl;
+    text-align: right;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+
+  input,
+  textarea,
+  [data-slot="select-trigger"],
+  [data-slot="dropdown-menu-content"],
+  [data-slot="dialog-content"],
+  [data-slot="drawer-content"],
+  [data-slot="sheet-content"] {
+    direction: rtl;
+    text-align: right;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="url"] {
+    direction: ltr;
+    text-align: left;
+  }
+
+  ::selection {
+    background: rgba(232, 101, 10, 0.18);
+    color: var(--color-primary-dark);
+  }
+}
+
+@layer components {
+  .surface-card {
+    @apply rounded-[var(--radius-lg-token)] border border-border bg-card;
+  }
+
+  .surface-shell {
+    @apply rounded-[var(--radius-xl-token)] border border-border/70 bg-card;
+  }
+
+  .section-eyebrow {
+    @apply font-mono text-[0.625rem] tracking-[0.28em] text-app-text-muted;
+  }
+
+  .metric-value {
+    @apply font-mono text-3xl font-bold tracking-[-0.05em];
+  }
+
+  .page-grid {
+    @apply grid gap-6;
+  }
+
+  .dashboard-stats-grid {
+    @apply grid gap-3 md:grid-cols-2 xl:grid-cols-4;
+  }
+
+  .dashboard-main-grid {
+    @apply grid gap-4 xl:grid-cols-[minmax(0,1.6fr)_minmax(320px,1fr)];
+  }
+
+  .dashboard-bottom-grid {
+    @apply grid gap-4 xl:grid-cols-2;
+  }
+}

@@ -1,0 +1,11 @@
+export { demoCenter, database } from "@/mocks/core/database"
+export { mockAttendanceService } from "@/mocks/attendance/service"
+export { mockDashboardService } from "@/mocks/dashboard/service"
+export { mockGradeService } from "@/mocks/grades/service"
+export { mockGroupService } from "@/mocks/groups/service"
+export { mockNotificationService } from "@/mocks/notifications/service"
+export { mockParentMessageService } from "@/mocks/parent-messages/service"
+export { mockParentService } from "@/mocks/parents/service"
+export { mockStudentService } from "@/mocks/students/service"
+export { mockTeacherService } from "@/mocks/teachers/service"
+
